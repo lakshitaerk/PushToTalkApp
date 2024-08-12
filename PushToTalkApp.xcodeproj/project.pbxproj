@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5276887B2C6A65B000FE8E83 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5276887A2C6A65B000FE8E83 /* Lottie */; };
+		52CC9BBC2C567D1F00509934 /* TenantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC9BBB2C567D1F00509934 /* TenantDetails.swift */; };
 		52D3EE992BC31F2A00A07001 /* PushToTalkAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3EE982BC31F2A00A07001 /* PushToTalkAppApp.swift */; };
 		52D3EE9B2BC31F2A00A07001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3EE9A2BC31F2A00A07001 /* ContentView.swift */; };
 		52D3EE9D2BC31F2D00A07001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D3EE9C2BC31F2D00A07001 /* Assets.xcassets */; };
 		52D3EEA02BC31F2D00A07001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D3EE9F2BC31F2D00A07001 /* Preview Assets.xcassets */; };
+		52FE87A62C651D8E00E58C02 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE87A52C651D8E00E58C02 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52CC9BBB2C567D1F00509934 /* TenantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantDetails.swift; sourceTree = "<group>"; };
 		52D3EE952BC31F2A00A07001 /* PushToTalkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushToTalkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D3EE982BC31F2A00A07001 /* PushToTalkAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToTalkAppApp.swift; sourceTree = "<group>"; };
 		52D3EE9A2BC31F2A00A07001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -21,6 +25,7 @@
 		52D3EE9F2BC31F2D00A07001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52D3EEA62BC3207D00A07001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		52D3EEA72BC320B900A07001 /* PushToTalkApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushToTalkApp.entitlements; sourceTree = "<group>"; };
+		52FE87A52C651D8E00E58C02 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5276887B2C6A65B000FE8E83 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 				52D3EE9A2BC31F2A00A07001 /* ContentView.swift */,
 				52D3EE9C2BC31F2D00A07001 /* Assets.xcassets */,
 				52D3EE9E2BC31F2D00A07001 /* Preview Content */,
+				52CC9BBB2C567D1F00509934 /* TenantDetails.swift */,
+				52FE87A52C651D8E00E58C02 /* Home.swift */,
 			);
 			path = PushToTalkApp;
 			sourceTree = "<group>";
@@ -87,6 +95,9 @@
 			dependencies = (
 			);
 			name = PushToTalkApp;
+			packageProductDependencies = (
+				5276887A2C6A65B000FE8E83 /* Lottie */,
+			);
 			productName = PushToTalkApp;
 			productReference = 52D3EE952BC31F2A00A07001 /* PushToTalkApp.app */;
 			productType = "com.apple.product-type.application";
@@ -115,6 +126,9 @@
 				Base,
 			);
 			mainGroup = 52D3EE8C2BC31F2A00A07001;
+			packageReferences = (
+				527688792C6A65AF00FE8E83 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 52D3EE962BC31F2A00A07001 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +157,8 @@
 			files = (
 				52D3EE9B2BC31F2A00A07001 /* ContentView.swift in Sources */,
 				52D3EE992BC31F2A00A07001 /* PushToTalkAppApp.swift in Sources */,
+				52FE87A62C651D8E00E58C02 /* Home.swift in Sources */,
+				52CC9BBC2C567D1F00509934 /* TenantDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		527688792C6A65AF00FE8E83 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5276887A2C6A65B000FE8E83 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 527688792C6A65AF00FE8E83 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52D3EE8D2BC31F2A00A07001 /* Project object */;
 }
